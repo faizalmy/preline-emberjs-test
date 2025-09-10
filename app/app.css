@@ -1,1 +1,4 @@
 @import "tailwindcss";
+
+/* Import Preline UI */
+@import "preline/variants.css";

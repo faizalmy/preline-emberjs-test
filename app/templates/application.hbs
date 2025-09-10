@@ -1,9 +1,65 @@
 {{page-title "PrelineEmberjsTest"}}
 
-<h1 class="text-3xl font-bold underline text-blue-600">
-  Hello world!
-</h1>
+<div class="min-h-screen bg-gray-50 py-12">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <!-- Tailwind CSS Test -->
+    <h1 class="text-3xl font-bold underline text-blue-600 mb-8">
+      Hello world! (Tailwind CSS)
+    </h1>
 
-<h2 id="title">Welcome to Ember</h2>
+    <!-- Preline UI Test Components -->
+    <div class="space-y-8">
+      <!-- Button Test -->
+      <div>
+        <h2 class="text-xl font-semibold mb-4">Preline Button Test</h2>
+        <button type="button" class="py-3 px-4 inline-flex items-center gap-x-2 text-sm font-semibold rounded-lg border border-transparent bg-blue-600 text-white hover:bg-blue-700 disabled:opacity-50 disabled:pointer-events-none">
+          Primary Button
+        </button>
+      </div>
+
+      <!-- Dropdown Test -->
+      <div>
+        <h2 class="text-xl font-semibold mb-4">Preline Dropdown Test</h2>
+        <div class="hs-dropdown relative inline-flex">
+          <button id="hs-dropdown-basic" type="button" class="hs-dropdown-toggle py-3 px-4 inline-flex items-center gap-x-2 text-sm font-semibold rounded-lg border border-gray-200 bg-white text-gray-800 shadow-sm hover:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none">
+            Dropdown
+            <svg class="hs-dropdown-open:rotate-180 size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
+          </button>
+
+          <div class="hs-dropdown-menu transition-[opacity,margin] duration hs-dropdown-open:opacity-100 opacity-0 hidden min-w-60 bg-white shadow-md rounded-lg p-2 mt-2 after:h-4 after:absolute after:-bottom-4 after:start-0 after:w-full before:h-4 before:absolute before:-top-4 before:start-0 before:w-full" role="menu" aria-orientation="vertical" aria-labelledby="hs-dropdown-basic">
+            <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-gray-800 hover:bg-gray-100 focus:outline-none focus:bg-gray-100" href="#">
+              About
+            </a>
+            <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-gray-800 hover:bg-gray-100 focus:outline-none focus:bg-gray-100" href="#">
+              Downloads
+            </a>
+            <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-gray-800 hover:bg-gray-100 focus:outline-none focus:bg-gray-100" href="#">
+              Account
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card Test -->
+      <div>
+        <h2 class="text-xl font-semibold mb-4">Preline Card Test</h2>
+        <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow">
+          <div class="p-5">
+            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900">Card Title</h5>
+            <p class="mb-3 font-normal text-gray-700">This is a test card component from Preline UI.</p>
+            <a href="#" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300">
+              Read more
+              <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <h2 id="title" class="mt-8">Welcome to Ember</h2>
+  </div>
+</div>
 
 {{outlet}}
